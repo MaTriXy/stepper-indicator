@@ -2,7 +2,7 @@
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-stepper--indicator-green.svg?style=true)](https://android-arsenal.com/details/1/3711)
 
 # ![](https://github.com/badoualy/stepper-indicator/blob/master/sample/src/main/res/mipmap-mdpi/ic_launcher.png) Stepper indicator
-> ### Designed by the great https://dribbble.com/LeslyPyram :)
+> ### Designed by the awesome https://dribbble.com/LeslyPyram :)
 
 <img src="https://github.com/badoualy/stepper-indicator/blob/master/ART/screen.gif" width="300">
 
@@ -24,13 +24,14 @@ repositories {
 
 Then, add the library dependency:
 ```gradle
-compile 'com.github.badoualy:stepper-indicator:1.0.0'
+compile 'com.github.badoualy:stepper-indicator:1.0.7'
 ```
 
 Now go do some awesome stuff!
 
 Usage
 ----------------
+
 ```xml
 <com.badoualy.stepperindicator.StepperIndicator
     android:layout_width="match_parent"
@@ -42,6 +43,7 @@ Attributes:
 
 | Name                   | Description                                         | Default value   |
 |------------------------|-----------------------------------------------------|-----------------|
+| stpi_animDuration      | duration of the line tracing animation              | 250 ms          |
 | stpi_stepCount         | number of pages/steps                               |                 |
 | stpi_circleColor       | color of the stroke circle                          | #b3bdc2 (grey)  |
 | stpi_circleRadius      | radius of the circle                                | 10dp            |
@@ -52,6 +54,7 @@ Attributes:
 | stpi_lineDoneColor     | color of a line when step is done                   | #00b47c (green) |
 | stpi_lineStrokeWidth   | width of the line stroke                            | 2dp             |
 | stpi_lineMargin        | margin at each side of the line                     | 5dp             |
+| stpi_showDoneIcon      | show the done check icon or not                     | true            |
 
 ```java
 indicator.setViewPager(pager);
@@ -67,7 +70,7 @@ Licence
 ```
 The MIT License (MIT)
 
-Copyright (c) 2015 Yannick Badoual
+Copyright (c) 2016 Yannick Badoual
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
